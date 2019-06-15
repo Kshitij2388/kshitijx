@@ -2,7 +2,6 @@ plugins {
 	id 'org.springframework.boot' version '2.1.5.RELEASE'
 	id 'java'
 	id 'war'
-	id 'eclipse'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -35,4 +34,5 @@ task copyToLib(type: Copy) {
         include "webapp-runner*"
     }
 }
+
 stage.dependsOn(copyToLib)
