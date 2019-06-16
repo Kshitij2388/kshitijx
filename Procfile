@@ -1,1 +1,2 @@
-web: java -jar build/server/webapp-runner-*.jar build/libs/kshitijk.war
+
+web: java -jar build/server/webapp-runner-*.jar build/libs/*.war
