@@ -14,7 +14,7 @@ import javax.mail.internet.MimeMessage;
 public class EmailSender 
 {
 	private static String from = "xitij9092@gmail.com";
-	private static String pass = "Temp23Temp*";
+	private static String pass = "Temp88Temp*";
 	private static String subject = "Someone is looking to hire you";
 	private static String[] to = {"solanki078@gmail.com"};
 	
