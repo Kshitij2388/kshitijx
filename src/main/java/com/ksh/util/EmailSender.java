@@ -15,6 +15,7 @@ public class EmailSender
 {
 	private static String from = "xitij9092@gmail.com";
 	private static String pass = "Temp88Temp*";
+	private static String token = "eiglgqirbwgrosqx";
 	private static String subject = "Someone is looking to hire you";
 	private static String[] to = {"solanki078@gmail.com"};
 	
@@ -45,7 +46,7 @@ public class EmailSender
 			message.setContent(body, "text/html");
 			System.out.println("EmailSender : "+message.getContent().toString());
 			Transport transport = session.getTransport("smtp");
-			transport.connect(host, from, pass);
+			transport.connect(host, from, token);
 			transport.sendMessage(message, message.getAllRecipients());
 			transport.close();
 			System.out.println("Mail sent successfully.");
